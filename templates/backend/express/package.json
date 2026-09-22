@@ -1,0 +1,14 @@
+{
+  "name": "{{PACKAGE_NAME}}",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "build": "node -e \"console.log('JavaScript API has no build step')\"",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "CWAD Chrome Extension",
+  "version": "1.0.0",
+  "description": "Professional Chrome Extension Manifest V3 starter.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CWAD Extension"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://example.com/*"
+      ],
+      "js": [
+        "content/content.js"
+      ]
+    }
+  ]
+}

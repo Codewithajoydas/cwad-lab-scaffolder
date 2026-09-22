@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "templates": [
+    {
+      "id": "express-javascript",
+      "path": "backend/express",
+      "version": "1.0.0"
+    },
+    {
+      "id": "node-api",
+      "path": "backend/node-api",
+      "version": "1.0.0"
+    },
+    {
+      "id": "express-typescript",
+      "path": "backend/typescript-express",
+      "version": "1.0.0"
+    },
+    {
+      "id": "cli",
+      "path": "cli/node-cli",
+      "version": "1.0.0"
+    },
+    {
+      "id": "electron",
+      "path": "desktop/electron",
+      "version": "1.0.0"
+    },
+    {
+      "id": "chrome-extension",
+      "path": "extensions/chrome",
+      "version": "1.0.0"
+    },
+    {
+      "id": "nextjs",
+      "path": "frontend/nextjs",
+      "version": "1.0.0"
+    },
+    {
+      "id": "react-vite",
+      "path": "frontend/react-vite",
+      "version": "1.0.0"
+    },
+    {
+      "id": "static-html",
+      "path": "frontend/static",
+      "version": "1.0.0"
+    },
+    {
+      "id": "empty",
+      "path": "generic/empty",
+      "version": "1.0.0"
+    },
+    {
+      "id": "expo",
+      "path": "mobile/expo",
+      "version": "1.0.0"
+    },
+    {
+      "id": "monorepo-fullstack",
+      "path": "monorepo/fullstack",
+      "version": "1.0.0"
+    },
+    {
+      "id": "monorepo-nextjs",
+      "path": "monorepo/nextjs-fullstack",
+      "version": "1.0.0"
+    },
+    {
+      "id": "monorepo-react-express",
+      "path": "monorepo/react-express",
+      "version": "1.0.0"
+    },
+    {
+      "id": "node-javascript",
+      "path": "node/javascript",
+      "version": "1.0.0"
+    },
+    {
+      "id": "node-typescript",
+      "path": "node/typescript",
+      "version": "1.0.0"
+    },
+    {
+      "id": "npm-library",
+      "path": "packages/npm-library",
+      "version": "1.0.0"
+    }
+  ]
+}

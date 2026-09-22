@@ -1,0 +1,48 @@
+@import "./variables.css";
+@import "./components.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: min(var(--container-width), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space-7);
+}
+
+.section-muted {
+  background: var(--color-surface);
+}

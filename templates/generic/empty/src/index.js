@@ -1,0 +1,1 @@
+console.log("CWAD empty template is ready.");

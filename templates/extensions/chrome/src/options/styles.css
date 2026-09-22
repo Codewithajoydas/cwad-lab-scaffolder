@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background: #f6f8fb;
+  color: #172033;
+  font-family: system-ui, sans-serif;
+}
+
+.options {
+  width: min(720px, calc(100% - 48px));
+  margin: 48px auto;
+  padding: 32px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
