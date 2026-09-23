@@ -9,8 +9,8 @@ import { validateProjectName } from "./validator/validateProjectName.js";
 import { validateProjectType } from "./validator/validateProjectType.js";
 import { templateNames } from "./utils/getTemplateNames.js";
 import { generateProject } from "./generator/generateProject.js";
-import { installDependencies } from "./cmd/installDependencies.js";
-import { setupGit } from "./cmd/setupGit.js";
+import { installDependencies } from "./services/packages/installDependencies.js";
+import { setupGit } from "./services/packages/setupGit.js";
 import { logger as log } from "./utils/log/logger.js";
 import { showWelcomeMessage } from "./utils/showWelcomeMessage.js";
 
