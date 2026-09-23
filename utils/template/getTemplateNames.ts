@@ -3,7 +3,15 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const fileContent = await fs.readFile(
-  path.join(__dirname, "..","..", "templates", "templates", "manifest.json"),
+  path.join(
+    __dirname,
+    "..",
+    "..",
+    "..",
+    "templates",
+    "templates",
+    "manifest.json",
+  ),
   "utf-8",
 );
 export const templateNames = JSON.parse(fileContent)?.templates?.map(

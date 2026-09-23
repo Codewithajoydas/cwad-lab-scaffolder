@@ -1,12 +1,6 @@
+import { SetupGitOptions } from "@/types/SetupGitOptions.js";
+import { logger } from "@/utils/log/logger.js";
 import { spawn } from "node:child_process";
-
-type RepositoryVisibility = "public" | "private";
-
-type SetupGitOptions = {
-  targetPath: string;
-  repositoryName: string;
-  visibility: RepositoryVisibility;
-};
 
 function runCommand(
   command: string,
@@ -44,11 +38,11 @@ export async function setupGit({
   visibility,
 }: SetupGitOptions): Promise<void> {
   await runCommand("git", ["init"], targetPath);
-
+  logger.success("Git initialized");
   await runCommand("git", ["add", "."], targetPath);
-
+  logger.success("Git added");
   await runCommand("git", ["commit", "-m", "Initial commit"], targetPath);
-
+  logger.success("Git committed: \'Initial commit\'");
   await runCommand(
     "gh",
     [
@@ -61,5 +55,8 @@ export async function setupGit({
       "--push",
     ],
     targetPath,
+  );
+  logger.success(
+    `GitHub repository created: ${repositoryName}, visibility: ${visibility} and pushed`,
   );
 }

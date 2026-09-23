@@ -1,26 +1,24 @@
 import { cp, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-
-import { getTemplatePath } from "../utils/getTemplateNames.js";
+import { getTemplatePath } from "../../utils/template/getTemplateNames.js";
+import { ProjectDetails } from "@/types/ProjectDetails.js";
+import { GenerateProjectResult } from "@/types/GenerateProjectResult.js";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 
-type GenerateProjectResult = {
-  targetPath: string;
-  success: boolean;
-};
-
-export const generateProject = async (
-  projectName: string,
-  projectType: string,
-): Promise<GenerateProjectResult> => {
-
+export const projectGenerator = async ({
+  projectName,
+  projectType,
+}: ProjectDetails): Promise<GenerateProjectResult> => {
   const targetPath = path.resolve(process.cwd(), projectName);
   const isCurrentDirectory = targetPath === process.cwd();
   const packageName = path.basename(targetPath);
+
+  
   const templatePath = path.join(
     __dir,
+    "..",
     "..",
     "..",
     "templates",
@@ -35,11 +33,7 @@ export const generateProject = async (
     const packageJsonPath = path.join(targetPath, "package.json");
 
     try {
-      const packageJsonContent = await readFile(
-        packageJsonPath,
-        "utf-8",
-      );
-
+      const packageJsonContent = await readFile(packageJsonPath, "utf-8");
       const packageJson = JSON.parse(packageJsonContent);
       packageJson.name = packageName;
       await writeFile(
