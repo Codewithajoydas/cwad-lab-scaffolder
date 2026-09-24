@@ -1,6 +1,6 @@
 {
   "name": "cwad-lab-scaffolder",
-  "version": "1.0.0",
+  "version": "1.0.01",
   "description": "Interactive professional project scaffolding CLI for modern apps, APIs, mobile, desktop, and monorepos.",
   "main": "dist/index.js",
   "type": "module",
