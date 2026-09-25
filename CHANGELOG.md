@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/Codewithajoydas/cwad-lab-scaffolder/compare/v1.0.2...v1.1.0) (2026-09-25)
+
+
+### Bug Fixes
+
+* correct typo in README for npx usage instructions ([501e6a6](https://github.com/Codewithajoydas/cwad-lab-scaffolder/commit/501e6a616f9ea452c1659c85af8d4d057cce9dc6))
+* update repository URLs in package.json for consistency ([5e50792](https://github.com/Codewithajoydas/cwad-lab-scaffolder/commit/5e50792ffb816d313ec9c4659cc82a2f3f10791d))
+
+
+### Features
+
+* update CI workflow to build and publish with Node.js 24 ([ca31a47](https://github.com/Codewithajoydas/cwad-lab-scaffolder/commit/ca31a47f3e837c8eb891d030a6c08e4ee66807e4))
+
 # 1.0.0 (2026-09-25)
 
 
