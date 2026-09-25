@@ -6,7 +6,7 @@ A TypeScript CLI for generating projects from reusable templates.
 
 ### Using npx
 
-Run the scaffolder without installing it globally:
+Run the scaffolder without installing it globally:-
 
 ```bash
 npx cwad-lab-scaffolder
