@@ -17,8 +17,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc-alias",
     "start": "node dist/index.js",
-    "dev": "tsx index.ts",
-    "prepublishOnly": "npm run build"
+    "dev": "tsx index.ts"
   },
   "keywords": [
     "scaffold",
@@ -53,7 +52,14 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^11.0.1",
+    "@semantic-release/github": "^12.0.10",
+    "@semantic-release/npm": "^13.2.0",
+    "@semantic-release/release-notes-generator": "^14.1.1",
     "@types/node": "^22.20.4",
+    "semantic-release": "^25.0.9",
     "tsc-alias": "^1.9.5",
     "tsx": "^4.23.15",
     "typescript": "^5.8.3"
