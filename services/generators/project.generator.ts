@@ -1,4 +1,4 @@
-import { cp, readFile, writeFile } from "node:fs/promises";
+import { cp, readFile, writeFile, rename } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { getTemplatePath } from "../../utils/template/getTemplateNames.js";
@@ -12,10 +12,8 @@ export const projectGenerator = async ({
   projectType,
 }: ProjectDetails): Promise<GenerateProjectResult> => {
   const targetPath = path.resolve(process.cwd(), projectName);
-  const isCurrentDirectory = targetPath === process.cwd();
   const packageName = path.basename(targetPath);
 
-  
   const templatePath = path.join(
     __dir,
     "..",
@@ -29,9 +27,15 @@ export const projectGenerator = async ({
     await cp(templatePath, targetPath, {
       recursive: true,
     });
-
     const packageJsonPath = path.join(targetPath, "package.json");
-
+    try {
+      await rename(
+        path.join(targetPath, "_gitignore"),
+        path.join(targetPath, ".gitignore"),
+      );
+    } catch (error) {
+      // ignore
+    }
     try {
       const packageJsonContent = await readFile(packageJsonPath, "utf-8");
       const packageJson = JSON.parse(packageJsonContent);
