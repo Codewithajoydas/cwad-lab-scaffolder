@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Codewithajoydas/cwad-lab-scaffolder/compare/v1.1.1...v1.2.0) (2026-10-03)
+
+
+### Features
+
+* consolidate and standardize .gitignore files across project templates ([3c25e42](https://github.com/Codewithajoydas/cwad-lab-scaffolder/commit/3c25e42f620423ec47babbe4479f15edc03e98cc))
+
 ## [1.1.1](https://github.com/Codewithajoydas/cwad-lab-scaffolder/compare/v1.1.0...v1.1.1) (2026-10-03)
 
 
