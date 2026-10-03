@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Codewithajoydas/cwad-lab-scaffolder/compare/v1.1.0...v1.1.1) (2026-10-03)
+
+
+### Bug Fixes
+
+* update .gitignore and add .npmignore to include templates/.gitignore ([a6557b7](https://github.com/Codewithajoydas/cwad-lab-scaffolder/commit/a6557b7e6f3f99450f709c0faee935f02b67cd64))
+
 # [1.1.0](https://github.com/Codewithajoydas/cwad-lab-scaffolder/compare/v1.0.2...v1.1.0) (2026-09-25)
 
 
